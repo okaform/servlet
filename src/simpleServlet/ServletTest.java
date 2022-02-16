@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+//<a href=${pageContext.request.contextPath}/login.html>here</a>
+
 @WebServlet(name = "ServletTest", urlPatterns = {"/serveMe"})//This url patterns is for the form. It takes the form from form action
 public class ServletTest extends HttpServlet { //response for Post
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

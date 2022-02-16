@@ -42,7 +42,7 @@ public class creditCard extends HttpServlet {
         String fullName = request.getParameter("fullname");
         //get the user's credit card information
         String cardNo = request.getParameter("cardNo");
-        //do some nice formating for the credit card number
+        //do some nice formatting for the credit card number
         String newCardNo="";
         for (int i =0; i < cardNo.length(); i++) {
             if (i == 3 || i == 7 || i == 11 || i == 15) {
